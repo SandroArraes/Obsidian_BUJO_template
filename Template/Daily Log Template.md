@@ -17,11 +17,11 @@ workout:
 - [[5.Yearly Log/<%moment(tp.file.title).format("YYYY")%>|<%moment(tp.file.title).format("YYYY")%>]]/[[3.Monthly Log/<%moment(tp.file.title).format("gggg-MM")%>|<%moment(tp.file.title).format("MM")%>]], [[2.Weekly Log/<%moment(tp.file.title).format("gggg-[W]ww") %>|W<%moment(tp.file.title).format("ww") %>]]
 - [[4.Future log/FutureLog|Future Log]]
 
-## 1. Major Work TODOs
-- [ ] Task 1
+## 1. Principais Tarefas de Trabalho
+- [ ] Tarefa 1
 
-## 2. Events/Deadlines/Commitments
-- [ ] An Event
+## 2. Eventos/Prazos/Compromissos
+- [ ] Feliz Ano Novo!! Bem-vindo a 2025!!
 <%*
 const weekdayStr = tp.date.now("dddd", 0, tp.file.title, "YYYY-MM-DD");
 if (weekdayStr === "Sunday" || weekdayStr === "星期日") {
@@ -42,47 +42,47 @@ if (day === lastDayOfMonth) {
 }
 %>
 
-## 3. Notes & ideas
+## 3. Notas e Ideias
 
 
-## 4. Time Blocks
-### Day Block Planner
-- [ ] 9:00 - 10:00 Morning
-- [ ] 10:00 - 11:00 Deep activity
-- [ ] 11:00 - 12:00 workout
-- [ ] 12:00 - 13:30 Deep activity
-- [ ] 13:30 - 15:00 Deep activity
-- [ ] 15:00 - 16:30 Deep activity
-- [ ] 16:30 - 17:30 Dinner
-- [ ] 17:30 - 18:30 Rest
-- [ ] 18:30 - 19:30 Shallow activity
-- [ ] 19:30 - 21:00 Shallow activity
-- [ ] 21:00 - 22:00 Shallow activity
-- [ ] 22:00 - 23:00 Shallow activity
-- [ ] 23:00 - 24:00 Tear down
+## 4. Blocos de Tempo
+### Planejamento do Dia
+- [ ] 09:00 - 10:00 Manhã
+- [ ] 10:00 - 11:00 Atividade profunda (Deep Work)
+- [ ] 11:00 - 12:00 Treino
+- [ ] 12:00 - 13:30 Atividade profunda (Deep Work)
+- [ ] 13:30 - 15:00 Atividade profunda (Deep Work)
+- [ ] 15:00 - 16:30 Atividade profunda (Deep Work)
+- [ ] 16:30 - 17:30 Jantar
+- [ ] 17:30 - 18:30 Descanso
+- [ ] 18:30 - 19:30 Atividade leve
+- [ ] 19:30 - 21:00 Atividade leve
+- [ ] 21:00 - 22:00 Atividade leve
+- [ ] 22:00 - 23:00 Atividade leve
+- [ ] 23:00 - 24:00 Encerramento do dia
 
-### Reminders
-- [ ] Plan next day (<%* tR+="@"%><%tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD")%> 19:30)
-- [ ] Review today (<%* tR+="@"%><%tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD")%> 22:30)
+### Lembretes
+- [ ] Planejar o próximo dia (<%* tR+="@"%><%tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD")%> 19:30)
+- [ ] Revisar hoje (<%* tR+="@"%><%tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD")%> 22:30)
 
 
-**Bullet Formats**
-- Basic bullets
-	- [ ] todo (- [ ])
-	- [/] incomplete (half completed) (- [/])
-	- [x] done (- [x])
-	- [-] canceled (- [-])
-	 - [I] idea (- [I])
-	 - [*] Events (- [\*])
-- Migration bullets
-	 - [>] forward (to Future Log) (- [>])
-	 - [<] re-scheduling (reschedule to the next day's Daily Log) (- [<])
-- Extended bullets
-	- [i] important (- [i])
-	- [u] up (- [u])
-	- [d] down (- [d])
-	- ["] quote (- ["])
-	- [l] location (- [l])
+**Legenda de Formatos (Bullets)**
+- Bullets Básicos
+    - [ ] a fazer (- [ ])
+    - [/] incompleto (feito pela metade) (- [/])
+    - [x] feito (- [x])
+    - [-] cancelado (- [-])
+     - [I] ideia (- [I])
+     - [*] Eventos (- [\*])
+- Bullets de Migração
+	 - [>] encaminhar (para o Registro Futuro) (- [>])
+     - [<] reagendar (para o Registro Diário de amanhã) (- [<])
+- Bullets Estendidos
+    - [i] importante (- [i])
+    - [u] alta prioridade/subir (- [u])
+    - [d] baixa prioridade/descer (- [d])
+    - ["] citação (- ["])
+    - [l] localização (- [l])
 
 
 
